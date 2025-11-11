@@ -1,0 +1,53 @@
+{
+  "models": {
+    "gpt2": {
+      "model_name": "gpt2",
+      "description": "Small GPT-2 model, good for testing",
+      "size": "~500MB",
+      "parameters": "124M"
+    },
+    "gpt2-medium": {
+      "model_name": "gpt2-medium",
+      "description": "Medium GPT-2 model",
+      "size": "~1.5GB",
+      "parameters": "355M"
+    },
+    "gpt2-large": {
+      "model_name": "gpt2-large",
+      "description": "Large GPT-2 model",
+      "size": "~3GB",
+      "parameters": "774M"
+    },
+    "phi-2": {
+      "model_name": "microsoft/phi-2",
+      "description": "Microsoft Phi-2, excellent small model",
+      "size": "~5GB",
+      "parameters": "2.7B"
+    },
+    "tinyllama": {
+      "model_name": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+      "description": "Tiny Llama chat model",
+      "size": "~2GB",
+      "parameters": "1.1B"
+    },
+    "llama2-7b": {
+      "model_name": "meta-llama/Llama-2-7b-chat-hf",
+      "description": "Llama 2 7B chat model (requires HF access)",
+      "size": "~13GB",
+      "parameters": "7B"
+    },
+    "mistral-7b": {
+      "model_name": "mistralai/Mistral-7B-Instruct-v0.2",
+      "description": "Mistral 7B instruction-tuned model",
+      "size": "~14GB",
+      "parameters": "7B"
+    }
+  },
+  "default_generation_params": {
+    "max_length": 512,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "top_k": 50,
+    "do_sample": true
+  }
+}
